@@ -1,0 +1,110 @@
+.services {
+  margin-top: 2rem;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  color: #6d91ee;
+  font-size: 30px;
+  width: 200px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.header span:nth-of-type(1) {
+  width: 20px;
+  height: 1px;
+  background-color: #6d91ee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+.header span:nth-of-type(2) {
+  width: 20px;
+  height: 1px;
+  background-color: #6d91ee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.header span:nth-of-type(3) {
+  width: 20px;
+  height: 1px;
+  background-color: #6d91ee;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.header span:nth-of-type(4) {
+  width: 20px;
+  height: 1px;
+  background-color: #6d91ee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto 0;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 26px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+  border-radius: 30px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p:first-child{
+    font-weight: bold;
+    margin: 0;
+}
+
+.content p:last-child{
+    margin: 0;
+    padding-top: 5px;
+}
+
+.btn{
+    text-align: center;
+    margin: 30px 0;
+}
+.btn button{
+    background-color: #5180F6;
+    color: #fff;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+        padding: 0 10px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+}
